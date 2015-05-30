@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *Red;
@@ -16,6 +18,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
