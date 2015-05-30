@@ -7,17 +7,17 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6C2DC756-EEA7-4947-AC08-F9FD971C2AC6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>queueApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>70838C350F71CDD9DD4A1F1F84813A23A8DC4D2E</key>
+		<key>E4C3A42DED4004952B654B37F4EC26C847DD72A5</key>
 		<string>https://github.com/thiagoald/queue.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>queueApp/queueApp.xcodeproj/project.xcworkspace</string>
+	<string>queueApp/queueApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>70838C350F71CDD9DD4A1F1F84813A23A8DC4D2E</key>
+		<key>E4C3A42DED4004952B654B37F4EC26C847DD72A5</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>70838C350F71CDD9DD4A1F1F84813A23A8DC4D2E</string>
+	<string>E4C3A42DED4004952B654B37F4EC26C847DD72A5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>70838C350F71CDD9DD4A1F1F84813A23A8DC4D2E</string>
+			<string>E4C3A42DED4004952B654B37F4EC26C847DD72A5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>queue</string>
 		</dict>
