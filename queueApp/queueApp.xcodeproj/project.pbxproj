@@ -21,6 +21,7 @@
 		A3BFC4861B1A610700680A9F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */; };
 		A3BFC4871B1A610700680A9F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */; };
 		A3BFC4881B1A610700680A9F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */; };
+		A3D0C7141B1B582D00ED311B /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D0C7131B1B582D00ED311B /* PickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A3D0C7121B1B582D00ED311B /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		A3D0C7131B1B582D00ED311B /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				918D78211B1A0C010072E628 /* ViewController.h */,
 				918D78221B1A0C020072E628 /* ViewController.m */,
 				918D78241B1A0C020072E628 /* Main.storyboard */,
+				A3D0C7121B1B582D00ED311B /* PickerViewController.h */,
+				A3D0C7131B1B582D00ED311B /* PickerViewController.m */,
 				918D78271B1A0C020072E628 /* Images.xcassets */,
 				918D78291B1A0C020072E628 /* LaunchScreen.xib */,
 				918D781A1B1A0C010072E628 /* Supporting Files */,
@@ -276,6 +281,7 @@
 				A3AA2EE11B1A91F20060C33F /* ExamList.m in Sources */,
 				918D78201B1A0C010072E628 /* AppDelegate.m in Sources */,
 				918D781D1B1A0C010072E628 /* main.m in Sources */,
+				A3D0C7141B1B582D00ED311B /* PickerViewController.m in Sources */,
 				A3AA2ED21B1A82260060C33F /* TimerAtual.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

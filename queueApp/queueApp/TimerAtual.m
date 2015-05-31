@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *OffSet;
 @property (weak, nonatomic) IBOutlet UIButton *Cancelar;
 @property (weak, nonatomic) IBOutlet UILabel *tempo;
-
+@property (weak, nonatomic) IBOutlet UIButton *adiantar;
 @end
 
 @implementation TimerAtual
@@ -26,6 +26,7 @@
     self.Label.hidden = YES;
     self.OffSet.hidden = YES;
     self.Cancelar.layer.cornerRadius = 10;
+    self.adiantar.layer.cornerRadius = 10;
     
 
     //self.tempo.font = [UIFont fontWithName:@"Montserrat" size:200];

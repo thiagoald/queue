@@ -106,6 +106,15 @@
                                     <action selector="BUTAO:" destination="iCm-NV-PeM" eventType="touchUpInside" id="cM1-yd-VFB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbi-gP-Ut4">
+                                <rect key="frame" x="320" y="184" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KMp-5A-Zcw" kind="push" id="iOP-fK-WTS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -162,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="1701.5" y="303.5"/>
         </scene>
-        <!--Tempo-->
+        <!--Clínica A-->
         <scene sceneID="01B-pq-bQA">
             <objects>
                 <viewController storyboardIdentifier="Timer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pFn-Mr-ZyS" customClass="TimerAtual" sceneMemberID="viewController">
@@ -176,7 +185,8 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-r2-CK4">
                                 <rect key="frame" x="66" y="398" width="78" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.33333333333333331" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.2196078431372549" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.72941176470588232" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.0" green="0.72941176470588232" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,7 +198,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeJ-M1-IUf">
                                 <rect key="frame" x="242" y="398" width="78" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.33333333333333331" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.2196078431372549" blue="0.22352941176470573" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.72941176470588232" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Adiar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -197,15 +208,9 @@
                                     <segue destination="Sj1-QN-diE" kind="push" id="Mog-JK-DhX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njq-gl-rEc">
-                                <rect key="frame" x="211" y="232" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reduzir em x minutos?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7t-i9-fzr">
-                                <rect key="frame" x="104" y="466" width="177" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="110" y="467" width="177" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -218,35 +223,33 @@
                                 <color key="tintColor" red="0.0" green="0.72941176470588232" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="666" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qas-zp-W0d">
-                                <rect key="frame" x="146" y="213" width="92" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="120" y="223" width="135" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-hG-83T">
-                                <rect key="frame" x="16" y="20" width="61" height="30"/>
-                                <state key="normal" title="Deslogar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Deslogar:" destination="pFn-Mr-ZyS" eventType="touchUpInside" id="Eh1-Y3-ikk"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clínica A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-SQ-NXF">
-                                <rect key="frame" x="158" y="93" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.55294117647058827" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njq-gl-rEc">
+                                <rect key="frame" x="263" y="262" width="36" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo Aprox." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-SQ-NXF">
+                                <rect key="frame" x="142" y="181" width="109" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.2196078431372549" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tempo" id="sRH-EJ-CP9"/>
+                    <navigationItem key="navigationItem" title="Clínica A" id="sRH-EJ-CP9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Cancelar" destination="eHf-r2-CK4" id="sHc-DZ-zhV"/>
                         <outlet property="Label" destination="q7t-i9-fzr" id="gB5-EX-eXi"/>
                         <outlet property="OffSet" destination="9VM-50-xkM" id="5vw-m9-9rV"/>
+                        <outlet property="adiantar" destination="zeJ-M1-IUf" id="BI6-NB-F7w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXH-PX-Sal" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -256,7 +259,7 @@
         <!--Atrasar-->
         <scene sceneID="Ne9-kq-2Kx">
             <objects>
-                <viewController title="Atrasar" id="Sj1-QN-diE" sceneMemberID="viewController">
+                <viewController title="Atrasar" id="Sj1-QN-diE" customClass="PickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ub2-6r-oTI"/>
                         <viewControllerLayoutGuide type="bottom" id="OKm-ji-8Es"/>
@@ -265,28 +268,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo necessario" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBN-BF-uSG">
-                                <rect key="frame" x="108" y="72" width="140" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo Medio Necessário" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBN-BF-uSG">
+                                <rect key="frame" x="116" y="85" width="194" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.2196078431372549" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="gxE-O9-Lf8">
-                                <rect key="frame" x="0.0" y="162" width="375" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="454708136.56232899">
-                                    <!--2015-05-30 19:48:56 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="pt_BR"/>
-                            </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="TOB-Xh-UsQ">
-                                <rect key="frame" x="0.0" y="383" width="375" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="454708195.46146798">
-                                    <!--2015-05-30 19:49:55 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="pt_BR"/>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maximo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-xe-8aA">
-                                <rect key="frame" x="157" y="354" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Máximo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-xe-8aA">
+                                <rect key="frame" x="156" y="154" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -300,14 +289,11 @@
                                     <segue destination="LP5-mq-yvq" kind="push" id="VFp-fu-w3n"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minimo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNh-NA-diF">
-                                <rect key="frame" x="159" y="126" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x07-De-lo6">
+                                <rect key="frame" x="0.0" y="253" width="375" height="162"/>
+                            </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="atrasar" id="RXU-ZO-2nK"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -351,7 +337,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Aguardando" id="aIz-hl-eVJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -375,11 +361,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLK-Wo-6n8">
                                 <rect key="frame" x="149" y="130" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.2196078431372549" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cancelar" id="uoJ-Gc-gnK"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -394,7 +380,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rt2-H3-iOy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3oQ-t1-Bp0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3oQ-t1-Bp0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lem-kh-x7Q">
@@ -414,4 +400,5 @@
     <resources>
         <image name="Logomediqueue" width="457" height="78"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.44313725490196076" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
 </document>
