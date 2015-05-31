@@ -12,11 +12,12 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIView *Red;
+@property (weak, nonatomic) IBOutlet UITextField *CPFField;
 
 @end
 
 extern NSString *email;
+extern NSString *CPF;
 
 @implementation ViewController
 
@@ -25,7 +26,7 @@ extern NSString *email;
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = CGPointMake(self.view.center.x, 1.3 * self.view.center.y);
     [self.view addSubview:loginButton];
-    [self BUTAO:self];
+    //[self BUTAO:self];
 
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:113.0/255.0 blue:115.0/255.0 alpha:1];
@@ -35,7 +36,9 @@ extern NSString *email;
 -(IBAction)BUTAO:(id)sender
 {
     if (FBSDKAccessTokenDidChangeNotification) {
+        CPF = self.CPFField.text;
         email = @"Exames";
+        NSLog(@"CPF Armazenado : %@", CPF);
         [self prepare];
     }
     

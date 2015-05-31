@@ -17,6 +17,8 @@
 UIDocument *doc;
 extern NSString *email;
 extern int horario;
+extern int fudeu[5];
+extern NSString *CPF;
 
 
 @implementation ExamList
@@ -25,19 +27,24 @@ extern int horario;
     [super viewDidLoad];
     
     //Declarando Array da TableView
-    NSMutableArray *localList = [[NSMutableArray alloc] initWithObjects:@
-                                 "Casa", nil];
+    NSMutableArray *localList = [[NSMutableArray alloc] initWithObjects:nil];
+    self.horario = localList;
     self.list = localList;
     [self connectDB];
     
     [self trackUsers];
     
+    self.ListaDeExames.backgroundColor = [UIColor clearColor];
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(leUpload) userInfo:nil repeats:YES];
     // Do any additional setup after loading the view.
 
 
 }
 
-
+-(void)leUpload
+{
+    [self.ListaDeExames reloadData];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -58,22 +65,33 @@ extern int horario;
 }
 
 -(void)trackUsers{
-    CKQuery *query = [[CKQuery alloc] initWithRecordType:email predicate:[NSPredicate predicateWithValue:YES]];
+    CKQuery *query = [[CKQuery alloc] initWithRecordType:@"Cadastros" predicate:[NSPredicate predicateWithValue:YES]];
     
     [_publicDB performQuery:query inZoneWithID:nil completionHandler:^(NSArray *results, NSError *error) {
         if(error){
             NSLog(@"%@", error.localizedDescription);
         }
-        
-        NSData *data;
-        NSString *email;
-        
+        int i = 0;
+        NSString *CPF_Atual;
+        NSString *Clinica;
+        NSString *Exames;
+        NSString *horas;
         for(CKRecord *record in results){
             
-            // inicializa string NSSt = [[MKPointAnnotation alloc] init];
-            data = [record objectForKey:@"Horario"];
-            email = [record objectForKey:@"Email"];
-            [self.list addObject:email];
+            CPF_Atual = [record objectForKey:@"CPF"];
+            if([CPF_Atual isEqualToString:CPF])
+            {
+                
+                horas = [record objectForKey:@"Horario"];
+                Clinica = [record objectForKey:@"Clinica"];
+                Exames = [record objectForKey:@"Exame"];
+                fudeu[i] = [horas intValue];
+                i++;
+                [self.list addObject:Exames];
+                //[self.horario addObject:horas];
+
+            }
+         
         }
         [self.ListaDeExames reloadData];	
         
@@ -94,6 +112,7 @@ extern int horario;
     
     cell.textLabel.text = self.list[indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
@@ -107,7 +126,7 @@ extern int horario;
 {
     // muda de view e armazena o exame que foi selecionado.
 	UIViewController *view1 = [self.storyboard instantiateViewControllerWithIdentifier:@"Timer"];
-	horario = 32;
+    horario = fudeu[indexPath.row];
 	[self.navigationController pushViewController:view1 animated:YES];
 }
 

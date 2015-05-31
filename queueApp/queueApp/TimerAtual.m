@@ -10,7 +10,9 @@
 
 @interface TimerAtual ()
 
-@property (weak, nonatomic) IBOutlet UILabel *Label;
+
+@property (weak, nonatomic) IBOutlet UILabel *opc;
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *OffSet;
 @property (weak, nonatomic) IBOutlet UIButton *Cancelar;
 @property (weak, nonatomic) IBOutlet UILabel *tempo;
@@ -24,7 +26,8 @@ NSTimer *tempo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.Label.hidden = YES;
+    self.opc.hidden = YES;
+    self.tempo.hidden = YES;
     self.OffSet.hidden = YES;
     self.Cancelar.layer.cornerRadius = 10;
     self.adiantar.layer.cornerRadius = 10;
@@ -37,7 +40,8 @@ NSTimer *tempo;
 
 -(void)attimer
 {
-	horario--;
+    if(horario > 0)
+        horario--;
 	self.label.text = [NSString stringWithFormat:@"%d",horario];
 }
 
@@ -49,6 +53,10 @@ NSTimer *tempo;
 - (IBAction)Deslogar:(id)sender {
 	[tempo invalidate];
     [[self navigationController]popViewControllerAnimated:YES];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [tempo invalidate];
 }
 
 /*

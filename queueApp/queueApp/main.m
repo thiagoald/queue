@@ -12,6 +12,8 @@
 NSInteger indice;
 NSString *email;
 int horario;
+int fudeu[5];
+NSString *CPF;
 
 int main(int argc, char * argv[]) {
 	@autoreleasepool {
