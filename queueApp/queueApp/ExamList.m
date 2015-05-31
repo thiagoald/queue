@@ -94,7 +94,7 @@ extern int horario;
     UITableViewCell *cell = [[UITableViewCell alloc]init];
 	cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:17];
     cell.textLabel.text = self.list[indexPath.row];
-    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    //cell.textLabel.textAlignment = NSTextAlignmentCenter;
 	cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
