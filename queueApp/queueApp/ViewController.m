@@ -16,11 +16,12 @@
 
 @end
 
+extern NSString *email;
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     
-
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = CGPointMake(self.view.center.x, 1.3 * self.view.center.y);
     [self.view addSubview:loginButton];
@@ -34,6 +35,7 @@
 -(IBAction)BUTAO:(id)sender
 {
     if (FBSDKAccessTokenDidChangeNotification) {
+        email = @"Exames";
         [self prepare];
     }
     
@@ -41,7 +43,7 @@
 -(void)prepare
 {
      NSLog(@"vrsbsr");
-    UIViewController *view1 = [self.storyboard instantiateViewControllerWithIdentifier:@"Timer"];
+    UIViewController *view1 = [self.storyboard instantiateViewControllerWithIdentifier:@"ExamList"];
     [self.navigationController pushViewController:view1 animated:YES];
 }
 

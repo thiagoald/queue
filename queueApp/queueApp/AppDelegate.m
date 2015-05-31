@@ -21,6 +21,17 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //Testando iCloud
+    NSURL *ubiq = [[NSFileManager defaultManager]
+                   URLForUbiquityContainerIdentifier:nil];
+    if (ubiq) {
+        NSLog(@"iCloud access at %@", ubiq);
+        // TODO: Load document...
+    } else {
+        NSLog(@"No iCloud access");
+    }
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }
@@ -54,5 +65,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end

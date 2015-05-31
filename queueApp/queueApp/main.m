@@ -1,4 +1,4 @@
-//
+    //
 //  main.m
 //  queueApp
 //
@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+NSInteger indice;
+NSString *email;
 
 int main(int argc, char * argv[]) {
 	@autoreleasepool {

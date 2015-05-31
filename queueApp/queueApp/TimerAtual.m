@@ -10,12 +10,25 @@
 
 @interface TimerAtual ()
 
+@property (weak, nonatomic) IBOutlet UILabel *Label;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *OffSet;
+@property (weak, nonatomic) IBOutlet UIButton *Cancelar;
+@property (weak, nonatomic) IBOutlet UILabel *tempo;
+
 @end
 
 @implementation TimerAtual
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.Label.hidden = YES;
+    self.OffSet.hidden = YES;
+    self.Cancelar.layer.cornerRadius = 10;
+    
+
+    //self.tempo.font = [UIFont fontWithName:@"Montserrat" size:200];
     // Do any additional setup after loading the view.
 }
 

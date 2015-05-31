@@ -15,6 +15,9 @@
 		918D782B1B1A0C020072E628 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918D78291B1A0C020072E628 /* LaunchScreen.xib */; };
 		918D78371B1A0C020072E628 /* queueAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D78361B1A0C020072E628 /* queueAppTests.m */; };
 		A3AA2ED21B1A82260060C33F /* TimerAtual.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AA2ED11B1A82260060C33F /* TimerAtual.m */; };
+		A3AA2ED61B1A8F6A0060C33F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AA2ED51B1A8F6A0060C33F /* CoreData.framework */; };
+		A3AA2EDE1B1A90380060C33F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AA2EDD1B1A90380060C33F /* CloudKit.framework */; };
+		A3AA2EE11B1A91F20060C33F /* ExamList.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AA2EE01B1A91F20060C33F /* ExamList.m */; };
 		A3BFC4861B1A610700680A9F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */; };
 		A3BFC4871B1A610700680A9F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */; };
 		A3BFC4881B1A610700680A9F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */; };
@@ -51,6 +54,12 @@
 		A3AA2ECF1B1A7C670060C33F /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		A3AA2ED01B1A82260060C33F /* TimerAtual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerAtual.h; sourceTree = "<group>"; };
 		A3AA2ED11B1A82260060C33F /* TimerAtual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerAtual.m; sourceTree = "<group>"; };
+		A3AA2ED51B1A8F6A0060C33F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A3AA2ED71B1A8F700060C33F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A3AA2EDC1B1A90330060C33F /* queueApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = queueApp.entitlements; sourceTree = "<group>"; };
+		A3AA2EDD1B1A90380060C33F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A3AA2EDF1B1A91F20060C33F /* ExamList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamList.h; sourceTree = "<group>"; };
+		A3AA2EE01B1A91F20060C33F /* ExamList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamList.m; sourceTree = "<group>"; };
 		A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -61,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AA2EDE1B1A90380060C33F /* CloudKit.framework in Frameworks */,
+				A3AA2ED61B1A8F6A0060C33F /* CoreData.framework in Frameworks */,
 				A3BFC4871B1A610700680A9F /* FBSDKLoginKit.framework in Frameworks */,
 				A3BFC4861B1A610700680A9F /* FBSDKCoreKit.framework in Frameworks */,
 				A3BFC4881B1A610700680A9F /* FBSDKShareKit.framework in Frameworks */,
@@ -80,6 +91,9 @@
 		918D780E1B1A0C010072E628 = {
 			isa = PBXGroup;
 			children = (
+				A3AA2EDD1B1A90380060C33F /* CloudKit.framework */,
+				A3AA2ED71B1A8F700060C33F /* CoreLocation.framework */,
+				A3AA2ED51B1A8F6A0060C33F /* CoreData.framework */,
 				A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */,
 				A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */,
 				A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */,
@@ -101,6 +115,7 @@
 		918D78191B1A0C010072E628 /* queueApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3AA2EDC1B1A90330060C33F /* queueApp.entitlements */,
 				918D781E1B1A0C010072E628 /* AppDelegate.h */,
 				918D781F1B1A0C010072E628 /* AppDelegate.m */,
 				918D78211B1A0C010072E628 /* ViewController.h */,
@@ -111,6 +126,8 @@
 				918D781A1B1A0C010072E628 /* Supporting Files */,
 				A3AA2ED01B1A82260060C33F /* TimerAtual.h */,
 				A3AA2ED11B1A82260060C33F /* TimerAtual.m */,
+				A3AA2EDF1B1A91F20060C33F /* ExamList.h */,
+				A3AA2EE01B1A91F20060C33F /* ExamList.m */,
 			);
 			path = queueApp;
 			sourceTree = "<group>";
@@ -256,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				918D78231B1A0C020072E628 /* ViewController.m in Sources */,
+				A3AA2EE11B1A91F20060C33F /* ExamList.m in Sources */,
 				918D78201B1A0C010072E628 /* AppDelegate.m in Sources */,
 				918D781D1B1A0C010072E628 /* main.m in Sources */,
 				A3AA2ED21B1A82260060C33F /* TimerAtual.m in Sources */,
@@ -384,7 +402,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = queueApp/queueApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lhs/Documents/FacebookSDK,
@@ -392,6 +412,7 @@
 				INFOPLIST_FILE = queueApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -399,7 +420,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = queueApp/queueApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lhs/Documents/FacebookSDK,
@@ -407,6 +430,7 @@
 				INFOPLIST_FILE = queueApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
