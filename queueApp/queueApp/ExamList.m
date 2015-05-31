@@ -16,10 +16,10 @@
 @end
 UIDocument *doc;
 extern NSString *email;
+extern int horario;
+
 
 @implementation ExamList
-
-int i = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,8 +36,6 @@ int i = 0;
 
 
 }
-
-
 
 
 
@@ -108,6 +106,9 @@ int i = 0;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath   *)indexPath
 {
     // muda de view e armazena o exame que foi selecionado.
+	UIViewController *view1 = [self.storyboard instantiateViewControllerWithIdentifier:@"Timer"];
+	horario = 32;
+	[self.navigationController pushViewController:view1 animated:YES];
 }
 
 /*

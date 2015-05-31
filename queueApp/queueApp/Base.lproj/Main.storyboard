@@ -222,6 +222,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.72941176470588232" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="666" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qas-zp-W0d">
                                 <rect key="frame" x="120" y="223" width="135" height="60"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="80"/>
@@ -238,6 +239,27 @@
                                 <rect key="frame" x="142" y="181" width="109" height="22"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.2196078431372549" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-hG-83T">
+                                <rect key="frame" x="16" y="20" width="61" height="30"/>
+                                <state key="normal" title="Deslogar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Deslogar:" destination="pFn-Mr-ZyS" eventType="touchUpInside" id="Eh1-Y3-ikk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clínica A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-SQ-NXF">
+                                <rect key="frame" x="158" y="93" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.55294117647058827" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> ded66350e0cf602d68baffb6571c2f7e15c889ed
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="666" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qas-zp-W0d">
+                                <rect key="frame" x="135" y="214" width="73" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -249,7 +271,11 @@
                         <outlet property="Cancelar" destination="eHf-r2-CK4" id="sHc-DZ-zhV"/>
                         <outlet property="Label" destination="q7t-i9-fzr" id="gB5-EX-eXi"/>
                         <outlet property="OffSet" destination="9VM-50-xkM" id="5vw-m9-9rV"/>
+<<<<<<< HEAD
                         <outlet property="adiantar" destination="zeJ-M1-IUf" id="BI6-NB-F7w"/>
+=======
+                        <outlet property="label" destination="qas-zp-W0d" id="201-Z7-75W"/>
+>>>>>>> ded66350e0cf602d68baffb6571c2f7e15c889ed
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXH-PX-Sal" userLabel="First Responder" sceneMemberID="firstResponder"/>

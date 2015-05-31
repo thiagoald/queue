@@ -18,8 +18,9 @@
 @end
 
 @implementation TimerAtual
+extern int horario;
 
-
+NSTimer *tempo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,16 +29,25 @@
     self.Cancelar.layer.cornerRadius = 10;
     self.adiantar.layer.cornerRadius = 10;
     
-
+		self.label.text = [NSString stringWithFormat:@"%d",horario];
+		tempo = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(attimer) userInfo:nil repeats:YES];
     //self.tempo.font = [UIFont fontWithName:@"Montserrat" size:200];
     // Do any additional setup after loading the view.
 }
+
+-(void)attimer
+{
+	horario--;
+	self.label.text = [NSString stringWithFormat:@"%d",horario];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)Deslogar:(id)sender {
+	[tempo invalidate];
     [[self navigationController]popViewControllerAnimated:YES];
 }
 

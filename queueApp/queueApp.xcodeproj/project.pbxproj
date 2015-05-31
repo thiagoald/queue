@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9169C3051B1B4B5900EE05E1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9169C3021B1B4B5900EE05E1 /* FBSDKCoreKit.framework */; };
+		9169C3061B1B4B5900EE05E1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9169C3031B1B4B5900EE05E1 /* FBSDKLoginKit.framework */; };
+		9169C3071B1B4B5900EE05E1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9169C3041B1B4B5900EE05E1 /* FBSDKShareKit.framework */; };
 		918D781D1B1A0C010072E628 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D781C1B1A0C010072E628 /* main.m */; };
 		918D78201B1A0C010072E628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D781F1B1A0C010072E628 /* AppDelegate.m */; };
 		918D78231B1A0C020072E628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D78221B1A0C020072E628 /* ViewController.m */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9169C3021B1B4B5900EE05E1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		9169C3031B1B4B5900EE05E1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		9169C3041B1B4B5900EE05E1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		918D78171B1A0C010072E628 /* queueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = queueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918D781B1B1A0C010072E628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918D781C1B1A0C010072E628 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,9 +79,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9169C3071B1B4B5900EE05E1 /* FBSDKShareKit.framework in Frameworks */,
 				A3AA2EDE1B1A90380060C33F /* CloudKit.framework in Frameworks */,
+				9169C3051B1B4B5900EE05E1 /* FBSDKCoreKit.framework in Frameworks */,
 				A3AA2ED61B1A8F6A0060C33F /* CoreData.framework in Frameworks */,
 				A3BFC4871B1A610700680A9F /* FBSDKLoginKit.framework in Frameworks */,
+				9169C3061B1B4B5900EE05E1 /* FBSDKLoginKit.framework in Frameworks */,
 				A3BFC4861B1A610700680A9F /* FBSDKCoreKit.framework in Frameworks */,
 				A3BFC4881B1A610700680A9F /* FBSDKShareKit.framework in Frameworks */,
 			);
@@ -100,6 +109,9 @@
 				A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */,
 				A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */,
 				A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */,
+				9169C3021B1B4B5900EE05E1 /* FBSDKCoreKit.framework */,
+				9169C3031B1B4B5900EE05E1 /* FBSDKLoginKit.framework */,
+				9169C3041B1B4B5900EE05E1 /* FBSDKShareKit.framework */,
 				918D78191B1A0C010072E628 /* queueApp */,
 				918D78331B1A0C020072E628 /* queueAppTests */,
 				918D78181B1A0C010072E628 /* Products */,
@@ -225,7 +237,7 @@
 				TargetAttributes = {
 					918D78161B1A0C010072E628 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = QALTNZR5X2;
+						DevelopmentTeam = J273RJ8N9K;
 					};
 					918D782F1B1A0C020072E628 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -414,6 +426,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lhs/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = queueApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,6 +445,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lhs/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = queueApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -11,6 +11,7 @@
 
 NSInteger indice;
 NSString *email;
+int horario;
 
 int main(int argc, char * argv[]) {
 	@autoreleasepool {
