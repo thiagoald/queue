@@ -28,8 +28,8 @@ extern NSString *CPF;
     [self.view addSubview:loginButton];
     //[self BUTAO:self];
 
-    self.navigationController.navigationBar.hidden = NO;
-    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:113.0/255.0 blue:115.0/255.0 alpha:1];
+    self.navigationController.navigationBar.hidden = YES;
+    //self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.0/255.0 green:113.0/255.0 blue:115.0/255.0 alpha:1];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

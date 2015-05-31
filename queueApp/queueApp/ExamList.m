@@ -25,17 +25,19 @@ extern NSString *CPF;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+	self.navigationController.navigationBar.hidden = NO;
+	self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:51/255.0 green:141/255.0 blue:143/255.0 alpha:1];
     //Declarando Array da TableView
+
     NSMutableArray *localList = [[NSMutableArray alloc] initWithObjects:nil];
     self.horario = localList;
     self.list = localList;
     [self connectDB];
-    
     [self trackUsers];
     
     self.ListaDeExames.backgroundColor = [UIColor clearColor];
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(leUpload) userInfo:nil repeats:YES];
+
     // Do any additional setup after loading the view.
 
 
@@ -109,11 +111,10 @@ extern NSString *CPF;
 -(UITableViewCell*)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [[UITableViewCell alloc]init];
-    
+	cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:17];
     cell.textLabel.text = self.list[indexPath.row];
-    cell.textLabel.textAlignment = NSTextAlignmentCenter;
-    cell.backgroundColor = [UIColor clearColor];
-    
+	cell.backgroundColor = [UIColor clearColor];
+
     return cell;
 }
 
