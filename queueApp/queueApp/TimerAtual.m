@@ -46,6 +46,7 @@ NSTimer *tempo;
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)Deslogar:(id)sender {
+	[tempo invalidate];
     [[self navigationController]popViewControllerAnimated:YES];
 }
 
