@@ -10,6 +10,8 @@
 		9169C3051B1B4B5900EE05E1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9169C3021B1B4B5900EE05E1 /* FBSDKCoreKit.framework */; };
 		9169C3061B1B4B5900EE05E1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9169C3031B1B4B5900EE05E1 /* FBSDKLoginKit.framework */; };
 		9169C3071B1B4B5900EE05E1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9169C3041B1B4B5900EE05E1 /* FBSDKShareKit.framework */; };
+		918013551B1B7B7F009D720F /* cancelviewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 918013541B1B7B7F009D720F /* cancelviewcontroller.m */; };
+		918013581B1B7FC5009D720F /* atrasoviewControllwe.m in Sources */ = {isa = PBXBuildFile; fileRef = 918013571B1B7FC5009D720F /* atrasoviewControllwe.m */; };
 		918D781D1B1A0C010072E628 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D781C1B1A0C010072E628 /* main.m */; };
 		918D78201B1A0C010072E628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D781F1B1A0C010072E628 /* AppDelegate.m */; };
 		918D78231B1A0C020072E628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D78221B1A0C020072E628 /* ViewController.m */; };
@@ -41,6 +43,10 @@
 		9169C3021B1B4B5900EE05E1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9169C3031B1B4B5900EE05E1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		9169C3041B1B4B5900EE05E1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		918013531B1B7B7F009D720F /* cancelviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cancelviewcontroller.h; sourceTree = "<group>"; };
+		918013541B1B7B7F009D720F /* cancelviewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cancelviewcontroller.m; sourceTree = "<group>"; };
+		918013561B1B7FC5009D720F /* atrasoviewControllwe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atrasoviewControllwe.h; sourceTree = "<group>"; };
+		918013571B1B7FC5009D720F /* atrasoviewControllwe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atrasoviewControllwe.m; sourceTree = "<group>"; };
 		918D78171B1A0C010072E628 /* queueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = queueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918D781B1B1A0C010072E628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918D781C1B1A0C010072E628 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,6 +151,10 @@
 				A3AA2ED11B1A82260060C33F /* TimerAtual.m */,
 				A3AA2EDF1B1A91F20060C33F /* ExamList.h */,
 				A3AA2EE01B1A91F20060C33F /* ExamList.m */,
+				918013531B1B7B7F009D720F /* cancelviewcontroller.h */,
+				918013541B1B7B7F009D720F /* cancelviewcontroller.m */,
+				918013561B1B7FC5009D720F /* atrasoviewControllwe.h */,
+				918013571B1B7FC5009D720F /* atrasoviewControllwe.m */,
 			);
 			path = queueApp;
 			sourceTree = "<group>";
@@ -290,11 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				918D78231B1A0C020072E628 /* ViewController.m in Sources */,
+				918013551B1B7B7F009D720F /* cancelviewcontroller.m in Sources */,
 				A3AA2EE11B1A91F20060C33F /* ExamList.m in Sources */,
 				918D78201B1A0C010072E628 /* AppDelegate.m in Sources */,
 				918D781D1B1A0C010072E628 /* main.m in Sources */,
 				A3D0C7141B1B582D00ED311B /* PickerViewController.m in Sources */,
 				A3AA2ED21B1A82260060C33F /* TimerAtual.m in Sources */,
+				918013581B1B7FC5009D720F /* atrasoviewControllwe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

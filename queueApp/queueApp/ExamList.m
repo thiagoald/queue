@@ -23,15 +23,16 @@ extern int horario;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+	self.navigationController.navigationBar.hidden = NO;
+	self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:51/255.0 green:141/255.0 blue:143/255.0 alpha:1];
     //Declarando Array da TableView
     NSMutableArray *localList = [[NSMutableArray alloc] initWithObjects:@
-                                 "Casa", nil];
+                                 "Casa",@"HUE", nil];
     self.list = localList;
     [self connectDB];
-    
+	self.ListaDeExames.backgroundColor = [UIColor clearColor];
     [self trackUsers];
-    
+
     // Do any additional setup after loading the view.
 
 
@@ -91,10 +92,10 @@ extern int horario;
 -(UITableViewCell*)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [[UITableViewCell alloc]init];
-    
+	cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:17];
     cell.textLabel.text = self.list[indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
-    
+	cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
