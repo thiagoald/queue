@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TimerAtual.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
@@ -18,11 +19,30 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
+    loginButton.center = CGPointMake(self.view.center.x, 1.3 * self.view.center.y);
     [self.view addSubview:loginButton];
-	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self BUTAO:self];
+
+    self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:113.0/255.0 blue:115.0/255.0 alpha:1];
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+-(IBAction)BUTAO:(id)sender
+{
+    if (FBSDKAccessTokenDidChangeNotification) {
+        [self prepare];
+    }
+    
+}
+-(void)prepare
+{
+     NSLog(@"vrsbsr");
+    UIViewController *view1 = [self.storyboard instantiateViewControllerWithIdentifier:@"Timer"];
+    [self.navigationController pushViewController:view1 animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

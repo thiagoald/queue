@@ -94,26 +94,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNB-yc-Lkp">
-                                <rect key="frame" x="36" y="134" width="303" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJw-CQ-w4c">
-                                <rect key="frame" x="172" y="402" width="30" height="30"/>
-                                <state key="normal" title="Ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logomediqueue" translatesAutoresizingMaskIntoConstraints="NO" id="f2E-6l-brZ">
+                                <rect key="frame" x="35" y="77" width="304" height="51"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chi-Qg-01z">
+                                <rect key="frame" x="164" y="319" width="42" height="30"/>
+                                <state key="normal" title="Entrar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KMp-5A-Zcw" kind="push" id="snV-Qb-eSJ"/>
+                                    <action selector="BUTAO:" destination="iCm-NV-PeM" eventType="touchUpInside" id="cM1-yd-VFB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coloque seu e-mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJi-0t-lQO">
-                                <rect key="frame" x="36" y="105" width="149" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44313725490196076" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -124,12 +116,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glP-Bc-PCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273.5" y="303.5"/>
+            <point key="canvasLocation" x="1253.5" y="935.5"/>
         </scene>
         <!--Clínicas-->
         <scene sceneID="mBw-XY-Rhf">
             <objects>
-                <viewController title="Clínicas" id="KMp-5A-Zcw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="qwe" title="Clínicas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KMp-5A-Zcw" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g86-LS-YAJ"/>
                         <viewControllerLayoutGuide type="bottom" id="fxe-ep-6bI"/>
@@ -166,7 +158,7 @@
         <!--Tempo-->
         <scene sceneID="01B-pq-bQA">
             <objects>
-                <viewController id="pFn-Mr-ZyS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Timer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pFn-Mr-ZyS" customClass="TimerAtual" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FMQ-95-b1C"/>
                         <viewControllerLayoutGuide type="bottom" id="dun-Wu-eeJ"/>
@@ -175,12 +167,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clínica A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-SQ-NXF">
-                                <rect key="frame" x="28" y="28" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-r2-CK4">
                                 <rect key="frame" x="66" y="398" width="61" height="30"/>
                                 <state key="normal" title="Cancelar">
@@ -221,6 +207,21 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="666" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qas-zp-W0d">
                                 <rect key="frame" x="150" y="221" width="92" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-hG-83T">
+                                <rect key="frame" x="16" y="20" width="61" height="30"/>
+                                <state key="normal" title="Deslogar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Deslogar:" destination="pFn-Mr-ZyS" eventType="touchUpInside" id="Eh1-Y3-ikk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clínica A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-SQ-NXF">
+                                <rect key="frame" x="135" y="93" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -375,7 +376,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rt2-H3-iOy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3oQ-t1-Bp0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3oQ-t1-Bp0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lem-kh-x7Q">
@@ -384,12 +385,15 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iCm-NV-PeM" kind="relationship" relationship="rootViewController" id="h1a-Zg-O7V"/>
+                        <segue destination="iCm-NV-PeM" kind="relationship" relationship="rootViewController" id="sjz-35-hA5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edw-FF-lA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765.5" y="303.5"/>
+            <point key="canvasLocation" x="827.5" y="303.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logomediqueue" width="457" height="78"/>
+    </resources>
 </document>

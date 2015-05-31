@@ -14,6 +14,7 @@
 		918D78281B1A0C020072E628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918D78271B1A0C020072E628 /* Images.xcassets */; };
 		918D782B1B1A0C020072E628 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 918D78291B1A0C020072E628 /* LaunchScreen.xib */; };
 		918D78371B1A0C020072E628 /* queueAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 918D78361B1A0C020072E628 /* queueAppTests.m */; };
+		A3AA2ED21B1A82260060C33F /* TimerAtual.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AA2ED11B1A82260060C33F /* TimerAtual.m */; };
 		A3BFC4861B1A610700680A9F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */; };
 		A3BFC4871B1A610700680A9F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */; };
 		A3BFC4881B1A610700680A9F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */; };
@@ -43,6 +44,13 @@
 		918D78301B1A0C020072E628 /* queueAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = queueAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		918D78351B1A0C020072E628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		918D78361B1A0C020072E628 /* queueAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = queueAppTests.m; sourceTree = "<group>"; };
+		A3AA2ECB1B1A7C670060C33F /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		A3AA2ECC1B1A7C670060C33F /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		A3AA2ECD1B1A7C670060C33F /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		A3AA2ECE1B1A7C670060C33F /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		A3AA2ECF1B1A7C670060C33F /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		A3AA2ED01B1A82260060C33F /* TimerAtual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerAtual.h; sourceTree = "<group>"; };
+		A3AA2ED11B1A82260060C33F /* TimerAtual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerAtual.m; sourceTree = "<group>"; };
 		A3BFC4831B1A610700680A9F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A3BFC4841B1A610700680A9F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A3BFC4851B1A610700680A9F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -101,6 +109,8 @@
 				918D78271B1A0C020072E628 /* Images.xcassets */,
 				918D78291B1A0C020072E628 /* LaunchScreen.xib */,
 				918D781A1B1A0C010072E628 /* Supporting Files */,
+				A3AA2ED01B1A82260060C33F /* TimerAtual.h */,
+				A3AA2ED11B1A82260060C33F /* TimerAtual.m */,
 			);
 			path = queueApp;
 			sourceTree = "<group>";
@@ -108,6 +118,7 @@
 		918D781A1B1A0C010072E628 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3AA2ECA1B1A7C430060C33F /* Fontes */,
 				918D781B1B1A0C010072E628 /* Info.plist */,
 				918D781C1B1A0C010072E628 /* main.m */,
 			);
@@ -129,6 +140,18 @@
 				918D78351B1A0C020072E628 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3AA2ECA1B1A7C430060C33F /* Fontes */ = {
+			isa = PBXGroup;
+			children = (
+				A3AA2ECB1B1A7C670060C33F /* Montserrat-Black.otf */,
+				A3AA2ECC1B1A7C670060C33F /* Montserrat-Bold.otf */,
+				A3AA2ECD1B1A7C670060C33F /* Montserrat-Hairline.otf */,
+				A3AA2ECE1B1A7C670060C33F /* Montserrat-Light.otf */,
+				A3AA2ECF1B1A7C670060C33F /* Montserrat-Regular.otf */,
+			);
+			name = Fontes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,7 @@
 				918D78231B1A0C020072E628 /* ViewController.m in Sources */,
 				918D78201B1A0C010072E628 /* AppDelegate.m in Sources */,
 				918D781D1B1A0C010072E628 /* main.m in Sources */,
+				A3AA2ED21B1A82260060C33F /* TimerAtual.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
